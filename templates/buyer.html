@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <style> 
+
+.Iphone h4{margin: 0;
+padding: 0;}
+
+.s23 h4{margin: 0;
+padding: 0;}
+
+.flip4 h4{margin: 0;
+padding: 0; }
+
+.ashu img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+</style>
+<body>
+    <h2>Hello Buyer</h2>
+    
+    <div class="ashu">
+
+     <div class="Iphone">
+      <img src={% static '/images/download.jpg' %} alt="this Image is missing">
+      <h4>Iphone</h4>
+    </div>
+
+     <div class="S23">
+        <img src={% static '/images/images.jpg' %} alt="this image is missing">
+        <h4>Samsungs23</h4>
+    </div>
+
+    <div class="flip4">
+        <img src= {% static '/images/Samsung-Galaxy-Z-Flip.jpg' %} alt="this image is missing">
+        <h4>flip4</h4>
+    </div> 
+
+
+
+    {% comment %} <form action="POST" enctype="multipart/form-data">
+        <input type="file" id="myFile" name="filename"> 
+        <input type="submit">
+    </form>  {% endcomment %}
+</body>
+</html>
